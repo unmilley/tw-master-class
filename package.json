@@ -30,7 +30,7 @@
     "lint": "eslint . && prettier -c .",
     "lint:fix": "eslint . --fix && prettier -w .",
     "prepack": "pnpm build",
-    "release": "pnpm test && git push --follow-tags && npm publish",
+    "release": "pnpm test && git push --follow-tags && npm publish --access public",
     "test": "pnpm lint:fix && pnpm test:types",
     "test:types": "tsc --noEmit --skipLibCheck"
   },
